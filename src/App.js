@@ -34,22 +34,26 @@ export default function App() {
       <h1
         style={{
           color: "#F3F4F6",
-          fontSize: "4rem",
+          fontSize: "3rem",
           backgroundColor: "#1F2937"
         }}
       >
         Facemoji
+        <p
+          style={{
+            color: "#F3F4F6",
+            fontSize: "1rem",
+            backgroundColor: "#1F2937"
+          }}
+        >
+          we keep on making faces all the time, here are some of those...
+        </p>
       </h1>
-      <p
-        style={{
-          color: "#F3F4F6",
-          fontSize: "larger",
-          backgroundColor: "#1F2937"
-        }}
-      >
-        we keep on making faces all the time, here are some of those...
-      </p>
-      <input onChange={inputEmojiHandler}></input>
+      <div style={{ padding: "1rem" }}> Enter your favourite Face:</div>
+      <input
+        onChange={inputEmojiHandler}
+        style={{ height: "50px", width: "50px" }}
+      />
       <h2
         style={{
           color: "#92400E",
@@ -78,11 +82,11 @@ export default function App() {
         );
       })}
       <div style={{ padding: "1em" }}></div>
-      <h2>
+      <h4>
         “I call my pets ‘divine mirrors’—they reflect back the emotions you put
         in. If you put in love and respect and kindness and curiosity, the pet
         will return that.” –Allan Hamilton
-      </h2>
+      </h4>
     </div>
   );
 }
